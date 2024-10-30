@@ -13,8 +13,12 @@
     <p>
         #人類は廣井きくりになる必要がある
     </p>
-    <span>敵を見誤るなよ？（fill in target IP）：</span>
-    <input type="text">
+    <form method="POST" action="/">
+        {{ form.csrf_token }}
+        {{ form.ip_address.label }}
+        {{ form.ip_address(size=20) }}
+        {{ form.submit() }}
+    </form>
 </body>
 
 </html>
