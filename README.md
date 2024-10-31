@@ -11,3 +11,9 @@ pip install -r requirements.txt
 ```
 
 ※winは対応待てて…
+
+## 実行方法
+```sh
+python hacksick.py
+```
+
