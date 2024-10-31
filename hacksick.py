@@ -16,3 +16,6 @@ def index():
         ip_address = form.ip_address.data
         output, error = CommandAgent.run_command("nmap -sV", ip_address)
     return render_template('index.html', form=form, output=output, error=error)
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8949, debug=True)
