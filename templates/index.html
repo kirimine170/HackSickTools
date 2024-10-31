@@ -19,6 +19,16 @@
         {{ form.ip_address(size=20) }}
         {{ form.submit() }}
     </form>
+
+    {% if output %}
+    <h2>nmap Output:</h2>
+    <pre>{{ output }}</pre>
+    {% endif %}
+
+    {% if error %}
+    <h2>Error Output:</h2>
+    <pre>{{ error }}</pre>
+    {% endif %}
 </body>
 
 </html>
